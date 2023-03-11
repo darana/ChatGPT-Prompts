@@ -1,20 +1,19 @@
-I will provide you with the transcript of a video recording. Your goal is to parse the provided transcript and output the content into my requested structure.
+I will provide you with transcripts of video recordings. Your goal is to parse a provided transcript and output the content into my requested structure.
 
-General instructions for the output:
+General instructions for the replies:
 
-- Your output will include the important concepts from the transcript while removing the irrelevant filler and transition words.
-- You are not to invent new content.
-- Write your output as if you are an experienced personal trainer and kinesiology expert communicating to an experienced athlete.
-- Bias towards a verbosity in the output
+- Your replies will include the important concepts from the transcript while removing the irrelevant filler and transition words.
+- Do not invent new content.
+- Write your output as if you are an experienced personal trainer with expertise in kinesiology and biomechanics communicating to an experienced athlete. 
 
 General instructions for the common sections:
 
-- There are the common sections I expect to find in most transcripts.
+- There are common sections I expect to find in most transcripts.
 - The transcript may not include every common section.
-- For each section, I will describe examples the common text markers that indicate that section has begun.
-- These common text markers will be set off inside of double quotes for clarity, for example “this would be text inside of double quote”.
-- These text markers should be used as examples and not assumed be an exact match unless otherwise stated.
-- For each section I will describe some preferences for formatting your output of section.
+- For each common section, I will provide examples of typical text that indicate that section has begun to guide you in identifying the start of a common section.
+- These typical text markers will be set off inside of double quotes for clarity, for example “this would be text inside of double quote”.
+- These typical text markers should be used as examples and not assumed be an exact match unless otherwise stated.
+- For each section I will describe some preferences for formatting your output of the common section.
 - For the output, I will reference text that should be replicated exactly by surrounding it with single quotes, for example ‘this is text that should be output without transformation’.
 - The output should begin with your output only and should not include a copy of this prompt or of the original transcript.
 
@@ -22,18 +21,31 @@ Details for the common sections:
 
 Section 1 - Name:
 
-This will usually be the very first part of the transcript. It typically starts with “this is the” followed by the name of the activity. The output for this sections should start with ‘Name: ‘ followed by the name. This section should be a single paragraph with no line breaks.
+- This will usually be the very first part of the transcript. It typically starts with “this is the” followed by the name of the activity. 
+- The output for this sections should start with ‘Name: ‘ followed by the name. This section should be a single paragraph with no line breaks.
 
 Section 2 - Purpose:
 
-This will usually follow the Name section and will include the text “purpose”. If the text “purpose” is not found following the Name section, then there is no Purpose section in this transcript and you should move on to Section 3. The output for this sections should start with ‘Purpose: ‘ followed by the purpose. This section should be a single paragraph with no line breaks. In cases where there are two or more discrete purposes, they should be separated with a comma.
+- This will usually follow the Name section and will include the text “purpose”.
+- If the text “purpose” is not found following the Name section, then there is no Purpose section in this transcript and you should move on to Section 3 - Instructions. 
+- The output for this sections should start with ‘Purpose: ‘ followed by the purpose. 
+- This section should be a single paragraph with no line breaks. In cases where there are two or more discrete purposes, they should be separated with a comma.
 
 Section 3 - Instructions:
 
-This section typically follows the Purpose section, or if the transcript does not include a Purpose section, it typically follows the Name section. This section will often start with words that are used to describe actions that viewer of the original video should be taking, for example phrases such as “what we’re going to do here” or “to set up for this we need”. You will identify the distinct steps by parsing the text into logical breaks based on the context. Look for words such as “and”, “so what”, “and then”, “and now”, or “and just”. This section may be the longest section of the transcript. The output for this section should start with ‘> Form Notes + Cues‘. Following the starting text, this section should be a bulleted list where each distinct step in the instructions is output as a separate bullet and be indented one level. Include all distinct steps in this section. Remove all of the filler words between distinct steps. 
+- This section typically follows the Purpose section, or if the transcript does not include a Purpose section, it typically follows the Name section. 
+- This section will often start with words that are used to describe actions that viewer of the original video should be taking, for example phrases such as “what we’re going to do here” or “to set up for this we need”. 
+- You will identify the distinct steps by parsing the text into logical breaks based on the context. Look for words such as “and”, “so what”, “and then”, “and now”, or “and just”. 
+- This section may be the longest section of the transcript. 
+- The output for this section should start with ‘> Form Notes + Cues‘. 
+- Following the starting text, this section should be a bulleted list where each distinct step in the instructions is output as a separate bullet and be indented one level. Include all distinct steps in this section. 
+- Remove all of the filler words between distinct steps. 
 
 Section 4 - Common Mistakes:
 
-This section is typically the last section in the transcript. This section typically starts with “the most common mistake” followed by one or more distinct common mistakes. The output for this section should start with ‘> Common Mistakes‘. Each common mistake from this section should be a single paragraph.
+- This section is typically the last section in the transcript. 
+- This section typically starts with “the most common mistake” followed by one or more distinct common mistakes. 
+- The output for this section should start with ‘> Common Mistakes‘.
+- Following the starting text, this section should be a bulleted list where each common mistake in the instructions is output as a separate bullet and be indented one level. Include all common mistake in this section. 
 
-Here is the transcript I would like you to parse:
+Here is your first transcript:
